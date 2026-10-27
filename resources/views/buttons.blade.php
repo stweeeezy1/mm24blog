@@ -19,4 +19,13 @@
     </div>
 
     <button class="btn btn-primary">Click me!</button>
+    <button type="button"
+  class="inline-block cursor-pointer select-none rounded-md border border-[#0d6efd] bg-[#0d6efd] px-3 py-1.5 text-center align-middle text-base font-normal leading-normal text-white transition-colors duration-150 hover:border-[#0a58ca] hover:bg-[#0b5ed7] focus:border-[#0a58ca] focus:bg-[#0b5ed7] focus:outline-none focus:ring-4 focus:ring-[#3184fd]/50 active:border-[#0a53be] active:bg-[#0a58ca] disabled:pointer-events-none disabled:opacity-[.65]">
+  Primary
+</button>
+
+<button type="button" disabled
+  class="inline-block cursor-pointer select-none rounded-md border border-[#0d6efd] bg-[#0d6efd] px-3 py-1.5 text-center align-middle text-base font-normal leading-normal text-white transition-colors duration-150 hover:border-[#0a58ca] hover:bg-[#0b5ed7] focus:border-[#0a58ca] focus:bg-[#0b5ed7] focus:outline-none focus:ring-4 focus:ring-[#3184fd]/50 active:border-[#0a53be] active:bg-[#0a58ca] disabled:pointer-events-none disabled:opacity-[.65]">
+  Primary disabled
+</button>
 @endsection
