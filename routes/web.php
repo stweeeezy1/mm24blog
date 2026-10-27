@@ -4,6 +4,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\TagController;
 
 Route::get('/', [PublicController::class, 'index'])->name('home');
 Route::get('/buttons', [PublicController::class, 'buttons'])->name('buttons');
@@ -37,3 +39,5 @@ require __DIR__.'/auth.php';
 Route::post('/post/{post}/comments', [CommentController::class, 'store'])
     ->name('comments.store')
     ->middleware('auth');
+
+Route::resource('/admin/tags', TagController::class)->middleware('auth');
