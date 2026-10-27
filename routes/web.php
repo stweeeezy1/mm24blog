@@ -33,3 +33,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::post('/post/{post}/comments', [CommentController::class, 'store'])
+    ->name('comments.store')
+    ->middleware('auth');
